@@ -59,7 +59,7 @@ static void tone_off()
     ledc_update_duty(LEDC_MODE, CHANNEL);
 }
 
-void step() {
+static void step() {
     if (MELODY_LEN == 0) {
         return;
     }
