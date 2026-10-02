@@ -2,6 +2,12 @@
 
 #include <stdint.h>
 
+#define D_EIGHTH 4
+#define D_QUARTER 8
+#define D_HALF 16
+#define D_DOT_HALF 24
+#define D_WHOLE 32
+
 /* ---------------------------------------------------------------- октава 0 */
 #define C0 16
 #define CS0 17

@@ -2,11 +2,6 @@
 
 #include "notes.h"
 
-#define D_EIGHTH 4
-#define D_QUARTER 8
-#define D_HALF 16
-#define D_DOT_HALF 24
-
 // М. Леонтович - Щедрик (Carol of the Bells)
 static const note_t melody[] = {
     // Intro - 4 bars of the iconic 4-note motif
