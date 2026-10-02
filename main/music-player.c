@@ -47,14 +47,14 @@ static void setup() {
 }
 
 static void tone_on(const uint16_t freq) {
-  ledc_set_freq(LEDC_MODE, TIMER, freq);
-  ledc_set_duty(LEDC_MODE, CHANNEL, 512);
-  ledc_update_duty(LEDC_MODE, CHANNEL);
+  ESP_ERROR_CHECK(ledc_set_freq(LEDC_MODE, TIMER, freq));
+  ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, CHANNEL, 512));
+  ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, CHANNEL));
 }
 
 static void tone_off() {
-  ledc_set_duty(LEDC_MODE, CHANNEL, 0);
-  ledc_update_duty(LEDC_MODE, CHANNEL);
+  ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, CHANNEL, 0));
+  ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, CHANNEL));
 }
 
 static void step() {
